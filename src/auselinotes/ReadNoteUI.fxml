@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="610.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auselinotes.ReadNoteUIController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="59.0" layoutX="-1.0" stroke="RED" strokeType="INSIDE" width="606.0" />
+      <Text fill="WHITE" layoutX="8.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auseli Notes">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="readModeTitle" layoutX="21.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="562.5009765625">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+      <TextFlow fx:id="readModeDescription" layoutX="21.0" layoutY="159.0" prefHeight="433.0" prefWidth="563.0" />
+      <Button layoutX="520.0" layoutY="8.0" mnemonicParsing="false" onAction="#backButton" prefHeight="40.0" prefWidth="71.0" style="-fx-background-color: white;" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
