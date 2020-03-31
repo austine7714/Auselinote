@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="667.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auselinotes.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="51.0" stroke="RED" strokeType="INSIDE" width="535.0" />
+      <Separator layoutY="90.0" prefHeight="17.0" prefWidth="535.0" />
+      <TextField fx:id="searchNotes" layoutX="4.0" layoutY="58.0" prefHeight="32.0" prefWidth="407.0" promptText="Search for notes" />
+      <Separator layoutX="424.0" layoutY="52.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="21.0" />
+      <Text fx:id="NotesCounter" layoutX="468.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTES" wrappingWidth="54.13671875">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="1.0" layoutY="97.0" prefHeight="502.0" prefWidth="535.0">
+        <columns>
+          <TableColumn fx:id="titleColumn" onEditCommit="#changeTitleCellEvent" prefWidth="75.0" text="Title" />
+          <TableColumn fx:id="descriptionColumn" onEditCommit="#changeDescriptionCellEvent" prefWidth="459.0" text="Description" />
+        </columns>
+      </TableView>
+      <Separator layoutX="4.0" layoutY="596.0" prefHeight="4.0" prefWidth="529.0" />
+      <Button layoutX="441.0" layoutY="7.0" mnemonicParsing="false" onAction="#newNoteButton" prefHeight="32.0" prefWidth="87.0" style="-fx-background-color: white;" text="New Note" textFill="#1e0000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AUSELI NOTES" wrappingWidth="329.13671875">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="69.0" layoutY="598.0" stroke="RED" strokeType="INSIDE" width="537.0" />
+      <Button layoutX="36.0" layoutY="613.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="45.0" prefWidth="94.0" style="-fx-background-color: white;" text="Delete">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="413.0" layoutY="613.0" mnemonicParsing="false" onAction="#editButton" prefHeight="45.0" prefWidth="94.0" style="-fx-background-color: white;" text="Edit">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="222.0" layoutY="613.0" mnemonicParsing="false" onAction="#viewNoteButton" prefHeight="45.0" prefWidth="94.0" style="-fx-background-color: white;" text="View">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Text fx:id="numberOfNotes" layoutX="456.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
