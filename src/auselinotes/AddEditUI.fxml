@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="628.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auselinotes.AddEditUIController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="64.0" layoutX="-1.0" stroke="RED" strokeType="INSIDE" width="548.0" />
+      <Button layoutX="452.0" layoutY="10.0" mnemonicParsing="false" onAction="#notesListButton" prefHeight="45.0" prefWidth="88.0" style="-fx-background-color: white;" text="Notes List">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auseli Notes ">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Note Title:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="noteTitle" layoutX="14.0" layoutY="97.0" prefHeight="40.0" prefWidth="526.0" />
+      <Text layoutX="14.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Note Description:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="noteDescription" layoutX="17.0" layoutY="194.0" prefHeight="370.0" prefWidth="518.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="57.0" layoutY="576.0" stroke="RED" strokeType="INSIDE" width="547.0" />
+      <Button layoutX="17.0" layoutY="584.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="45.0" prefWidth="82.0" style="-fx-background-color: white;" text="Cancel">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="228.0" layoutY="584.0" mnemonicParsing="false" onAction="#clearButton" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: white;" text="Clear">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="439.0" layoutY="585.0" mnemonicParsing="false" onAction="#saveButton" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: white;" text="Save">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
